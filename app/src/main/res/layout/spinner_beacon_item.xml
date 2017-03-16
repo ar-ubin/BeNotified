@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="48dp">
+
+    <ImageView
+        android:id="@+id/beacon_color"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:clickable="false"
+        android:background="@drawable/ripple_oval"/>
+
+    <TextView
+        android:id="@+id/beacon_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/primeText"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+</LinearLayout>

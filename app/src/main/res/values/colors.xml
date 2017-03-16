@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#448AFF</color>
+
+    <color name="divider">#BDBDBD</color>
+    <color name="primeText">#212121</color>
+    <color name="secondaryText">#757575</color>
+
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+
+    <array name="beacon_colors">
+        <item>-769226</item>
+        <item>-1499549</item>
+        <item>-6543440</item>
+        <item>-10011977</item>
+        <item>-12627531</item>
+        <item>-14575885</item>
+        <item>-16537100</item>
+        <item>-16728876</item>
+        <item>-16738680</item>
+        <item>-11751600</item>
+        <item>-7617718</item>
+        <item>-3285959</item>
+        <item>-5317</item>
+        <item>-16121</item>
+        <item>-26624</item>
+        <item>-43230</item>
+        <item>-8825528</item>
+        <item>-6381922</item>
+        <item>-10453621</item>
+        <item>-16777216</item>
+    </array>
+
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/content_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ar_ubin.benotified.tabs.beacon.add.NewBeaconFragment">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/save_beacon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@mipmap/ic_stat_action_done"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/new_beacon_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:maxLines="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/new_beacon_minor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Minor"
+                android:inputType="number"
+                android:maxLines="1"/>
+
+            <EditText
+                android:id="@+id/new_beacon_major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Major"
+                android:inputType="number"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/new_beacon_uuid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UUID (Optional)"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/new_beacon_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:maxLines="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Senderadius"
+                android:textAppearance="?android:attr/textAppearanceSearchResultTitle"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/new_beacon_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Color"
+                android:textAppearance="?android:attr/textAppearanceSearchResultTitle"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/new_beacon_color"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:elevation="0dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
